@@ -1,0 +1,16 @@
+title: JS 101
+description: Let's learn Node
+template:
+  repo: js-101-template
+  name: js-101
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
